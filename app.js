@@ -14,7 +14,7 @@ var express = require('express'),
     engine = require('ejs-locals'),
     routes = require('./routes'),
     http = require('http'),
-    store = new express.session.MemoryStore,
+    store = new expressSession.MemoryStore,
     path = require('path');
 
 var app = express();
