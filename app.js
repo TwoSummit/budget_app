@@ -10,6 +10,7 @@ var template_engine = 'hbs',
     domain = 'localhost';
 
 var express = require('express'),
+    expressSession = require('express-session'),
     engine = require('ejs-locals'),
     routes = require('./routes'),
     http = require('http'),
@@ -57,11 +58,11 @@ app.configure(function() {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(express.cookieParser('wigglybits'));
-    app.use(express.session({
+    app.use(expressSession.session({
         secret: 'whatever',
         store: store
     }));
-    app.use(express.session());
+    app.use(expressSession.session());
     app.use(app.router);
     app.use(require('less-middleware')(__dirname + '/public'));
     app.use(express.static(path.join(__dirname, 'public')));
