@@ -1,0 +1,24 @@
+{
+  "name": "express-template-demo",
+  "version": "0.0.1-1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "consolidate": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "ejs": "*",
+    "ejs-locals": "*",
+    "express": "3.x",
+    "express-handlebars": "^3.0.0",
+    "handlebars-helpers": "*",
+    "less-middleware": "*",
+    "swig": "~0.12.1"
+  },
+  "subdomain": "utuxia.demo",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
