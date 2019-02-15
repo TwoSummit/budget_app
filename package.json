@@ -11,11 +11,12 @@
     "dustjs-linkedin": "*",
     "ejs": "*",
     "ejs-locals": "*",
-    "express": "3.x",
-    "express-handlebars": "^3.0.0",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-session": "*",
     "handlebars-helpers": "*",
     "less-middleware": "*",
-    "swig": "~0.12.1"
+    "swig": "*"
   },
   "subdomain": "utuxia.demo",
   "engines": {
