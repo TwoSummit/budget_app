@@ -108,8 +108,7 @@
 
     var budgetsData = {{{budgets}}};
     for( var budget = 0; budget < budgetsData.length; budget++){
-        var budgetDate = budgetsData[budget].date;
-        budgetDate = createConsistantDate(budgetDate);
+        budgetsData[budget].date = createConsistantDate(budgetsData[budget].date);
     }
 
     var numBudgetEntries = 0;
@@ -155,7 +154,7 @@
     * formats being passed around. It should allow for a more
     * consistant way of calculating dates.
     *
-    * @param {string} yearMonthDay String of year-month-day
+    * @param {string} yearMonthDay String of year-month-date
     *
     * @return {Date} Date to use in calculations.
     */
@@ -298,7 +297,7 @@
         var repDays = repetitionClock * repetitionAmount;
 
         /* "Many" calculations will now start incuring */
-        for(var months = 0; months <= 12; months++){
+        for(var months = 1; months <= 12; months++){
 
             $.each(manipulatedBudgetData, function(item, queue) {
                 var rowId = this.id;
@@ -322,7 +321,7 @@
 
                 } 
                 
-                // Calculate every divisible month
+                // Calculate every month
                 else if(months % entryRepeats === 0){
                     amount += entryAmount;
                     entriesAdded++;
