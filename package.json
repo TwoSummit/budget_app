@@ -11,6 +11,7 @@
     "dustjs-linkedin": "*",
     "ejs": "*",
     "ejs-locals": "*",
+    "errorhandler": "^1.5.0",
     "express": "*",
     "express-handlebars": "*",
     "express-session": "*",
