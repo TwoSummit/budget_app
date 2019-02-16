@@ -22,5 +22,12 @@ module.exports = {
             date: "2018-11-16",
             repeats: 1
         },
+        {
+            id: 4,
+            description: "Extra Entry",
+            amount: 1234,
+            date: "2018-11-14",
+            repeats: 1
+        },
     ]
 };
