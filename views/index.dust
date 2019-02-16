@@ -1,4 +1,0 @@
-{>layout/}
-{<content}
-	This is loaded from a partial.
-{/content}
