@@ -50,7 +50,7 @@ if (template_engine == 'swig') {
 app.set('template_engine', template_engine);
 app.set('domain', domain);
 app.set('port', process.env.PORT || 8888);
-app.set('views', __dirname + '\\views');
+app.set('views', __dirname + '//views');
 app.set('view engine', template_engine);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
